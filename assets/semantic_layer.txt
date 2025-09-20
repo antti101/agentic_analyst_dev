@@ -1,0 +1,66 @@
+{"name": "Buyer.visits", "group": "measures", "cube_name": "Buyer", "variants": "None", "hint": ""}
+{"name": "Buyer.customer_id", "group": "dimensions", "cube_name": "Buyer", "variants": "None", "hint": ""}
+{"name": "Buyer.avg_ticket", "group": "dimensions", "cube_name": "Buyer", "variants": "['< 20$', '20$-40$', '40$-60$', '60$-100$', '100$-300$', '300$+']", "hint": ""}
+{"name": "Buyer.spending_profile_range", "group": "dimensions", "cube_name": "Buyer", "variants": "['VIP', 'Top-tier', 'Core user', 'Occasional buyer']", "hint": ""}
+{"name": "Buyer.frequency_profile_range", "group": "dimensions", "cube_name": "Buyer", "variants": "['First-time buyer', 'Regular buyer', 'Consistent buyer', 'Occasional buyer']", "hint": ""}
+{"name": "Buyer.recency_range", "group": "dimensions", "cube_name": "Buyer", "variants": "['During last 7 days', '7 - 30 days ago', '30 - 60 days ago', '60 - 90 days ago', '90 - 120 days ago', '120 - 150 days ago', '150 - 180 days ago', '180+ days ago']", "hint": ""}
+{"name": "Buyer.loyalty_points_balance", "group": "measures", "cube_name": "Buyer", "variants": "None", "hint": ""}
+{"name": "Buyer.created_at_utc", "group": "dimensions", "cube_name": "Buyer", "variants": "None", "hint": "Timestamp of customer account creation in the system."}
+{"name": "Buyer.customer_name", "group": "dimensions", "cube_name": "Buyer", "variants": "None", "hint": "Patient's complete name as registered in the pharmacy system during account setup or prescription submission."}
+{"name": "Buyer.customer_city", "group": "dimensions", "cube_name": "Buyer", "variants": "None", "hint": "Customer location data, including city of residence, from address records."}
+{"name": "Buyer.customer_gender", "group": "dimensions", "cube_name": "Buyer", "variants": "['Not Selected', 'Male', 'Female', 'Non-Binary']", "hint": "Customer gender data, if available, for analyzing patient demographics and prescription trends."}
+{"name": "Buyer.customer_email", "group": "dimensions", "cube_name": "Buyer", "variants": "None", "hint": "Customer's contact email for updates on orders and communication."}
+{"name": "Buyer.sms_opt_in", "group": "dimensions", "cube_name": "Buyer", "variants": "['Yes', 'No']", "hint": "Shows if the patient has consented to receive text message notifications."}
+{"name": "Buyer.email_opt_in", "group": "dimensions", "cube_name": "Buyer", "variants": "['Yes', 'No']", "hint": "Shows if the patient has consented to receive promotional communications."}
+{"name": "Buyer.push_opt_in", "group": "dimensions", "cube_name": "Buyer", "variants": "['Yes', 'No']", "hint": "Shows if the patient has opted in to receive alerts for prescription refills and promotions."}
+{"name": "Buyer.birthday", "group": "dimensions", "cube_name": "Buyer", "variants": "None", "hint": "Customer birthdate is essential for verifying age and analyzing demographics to better understand patient profiles and tailor prescription recommendations and inventory management accordingly."}
+{"name": "Buyer.residential_address", "group": "dimensions", "cube_name": "Buyer", "variants": "None", "hint": "Customer-provided address associated with their account for prescription fulfillment and sales tracking."}
+{"name": "Goods.qty", "group": "measures", "cube_name": "Goods", "variants": "None", "hint": "Total quantity of prescription medications processed in inventory transactions during the specified time frame. This metric offers visibility into the amount of medications acquired, dispensed, or transferred."}
+{"name": "Goods.qty_in_sellable_zone", "group": "measures", "cube_name": "Goods", "variants": "None", "hint": "The overall count of products allocated to a designated area for sale in the pharmacy."}
+{"name": "Goods.qty_in_non_sellable_zone", "group": "measures", "cube_name": "Goods", "variants": "None", "hint": "The total count of items allocated to a non-sale location in the pharmacy inventory."}
+{"name": "Goods.avg_cost", "group": "measures", "cube_name": "Goods", "variants": "None", "hint": "Average wholesale cost per unit at the time of each transaction is a key metric for assessing historical cost trends and pricing strategies in your pharmacy."}
+{"name": "Goods.avg_days_to_expire", "group": "measures", "cube_name": "Goods", "variants": "None", "hint": "Track the average days until expiration for all inventory items to optimize stock rotation and minimize waste from expired products."}
+{"name": "Goods.dealer_id", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": ""}
+{"name": "Goods.dealer_name", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "The organization responsible for managing prescription drug inventory."}
+{"name": "Goods.store_name", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "The exact pharmacy store where the medication is available."}
+{"name": "Goods.distributor_name", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "'Track the origin of the product supplier for prescription data analysis and inventory management.'"}
+{"name": "Goods.product_name", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "Product's commonly used name or short form."}
+{"name": "Goods.product_category", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "Main categorization of products in the pharmacy inventory system."}
+{"name": "Goods.product_sub_category", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "Enhance product categorization to provide detailed insights into prescription data, patient adherence, drug inventory, and sales within the pharmacy."}
+{"name": "Goods.product_brand", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "Product supplier or manufacturer information."}
+{"name": "Goods.days_to_expire", "group": "dimensions", "cube_name": "Goods", "variants": "['Expired', 'During 7 days', '7 - 30 days', '30 - 60 days', '60 - 90 days', '90 - 180 days', '180+ days']", "hint": "Remaining days until product expiration."}
+{"name": "Goods.expiration_date", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "Product expiration date."}
+{"name": "Goods.reception_date", "group": "dimensions", "cube_name": "Goods", "variants": "None", "hint": "'Track the date when a medication was added to the inventory system.'"}
+{"name": "Goods.sold", "group": "measures", "cube_name": "Goods", "variants": "None", "hint": "Total number of prescription items dispensed and sold during the specified timeframe, accounting for any returns or refunds. For instance, if 10 prescriptions are dispensed and 3 are returned, the total count will include the initial 10 prescriptions dispensed."}
+{"name": "Orders.dealer_id", "group": "dimensions", "cube_name": "Orders", "variants": "None", "hint": ""}
+{"name": "Orders.store_name", "group": "dimensions", "cube_name": "Orders", "variants": "None", "hint": "Identifying the exact store where prescriptions were filled is essential for analyzing sales performance based on location and evaluating store efficiency."}
+{"name": "Orders.product_full_name", "group": "dimensions", "cube_name": "Orders", "variants": "None", "hint": "Ensure the product name is up-to-date and accurate for precise identification and effective inventory management."}
+{"name": "Orders.cancellation_reason", "group": "dimensions", "cube_name": "Orders", "variants": "None", "hint": "Understanding the reasons behind order cancellations is crucial for pinpointing operational challenges and enhancing customer satisfaction in the pharmacy business."}
+{"name": "Orders.employee", "group": "dimensions", "cube_name": "Orders", "variants": "None", "hint": "Key personnel handling this particular prescription management task, crucial for monitoring performance and ensuring accountability in pharmacy operations."}
+{"name": "Orders.order_status", "group": "dimensions", "cube_name": "Orders", "variants": "None", "hint": "Shows the status of prescriptions (e.g., filled, canceled, processed), crucial for tracking pharmacy operations."}
+{"name": "Orders.fulfillment_type", "group": "dimensions", "cube_name": "Orders", "variants": "None", "hint": "Indicates the method of order fulfillment (e.g., delivery, pickup), crucial for managing inventory, optimizing patient adherence, and enhancing customer service."}
+{"name": "Orders.platform_type", "group": "dimensions", "cube_name": "Orders", "variants": "None", "hint": "Analyzing the device or platform through which prescriptions are ordered (e.g., mobile, desktop) can provide insights into customer behavior and help enhance the user experience for patients."}
+{"name": "Orders.net_sales", "group": "measures", "cube_name": "Orders", "variants": "None", "hint": "Calculate the total revenue generated from prescription sales, factoring in product prices, quantities, discounts, loyalty point redemptions, and refunds, excluding fees and taxes."}
+{"name": "Orders.promo_discount", "group": "measures", "cube_name": "Orders", "variants": "None", "hint": "Overall sum of all discounts offered, including discounts applied to individual items and entire receipts."}
+{"name": "Orders.loyalty_discount", "group": "measures", "cube_name": "Orders", "variants": "None", "hint": "Total value of loyalty points redeemed through the loyalty program tiers, excluding any refunds, in terms of monetary value."}
+{"name": "Orders.bonus_points", "group": "measures", "cube_name": "Orders", "variants": "None", "hint": "Total amount of loyalty points redeemed by customers for discounts on purchases within the loyalty program."}
+{"name": "Orders.delivery_fee", "group": "measures", "cube_name": "Orders", "variants": "None", "hint": "Total expenses incurred by customers for the delivery of purchased medications to their designated location."}
+{"name": "Orders.tips", "group": "measures", "cube_name": "Orders", "variants": "None", "hint": "Total value of tips received from customers who made payments using credit cards."}
+{"name": "Promotions.delivery_rate", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.bounce_rate", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.opt_out_rate", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.click_rate", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.click_through_rate", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.open_rate", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.sent", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.bounced", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.spam", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.delivered", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.opened", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.net_sales", "group": "measures", "cube_name": "Promotions", "variants": "None", "hint": ""}
+{"name": "Promotions.customer_name", "group": "dimensions", "cube_name": "Promotions", "variants": "None", "hint": "Identifying the caregiver's name during purchase is crucial for regulatory compliance and monitoring patient care in the pharmacy system."}
+{"name": "Promotions.customer_referral", "group": "dimensions", "cube_name": "Promotions", "variants": "None", "hint": "Track the channels that drive customers to the pharmacy (e.g., recommendations, online promotions) to optimize marketing strategies and enhance customer acquisition."}
+{"name": "Promotions.customer_city", "group": "dimensions", "cube_name": "Promotions", "variants": "None", "hint": "Customer location data, specifically the city of residence as part of the address details."}
+{"name": "Promotions.customer_age", "group": "dimensions", "cube_name": "Promotions", "variants": "None", "hint": "Provides insight into the demographic age group of the pharmacy's customers."}
+{"name": "Promotions.customer_gender", "group": "dimensions", "cube_name": "Promotions", "variants": "['Not Selected', 'Male', 'Female', 'Non-Binary']", "hint": "Customer gender data can be utilized to gain insights into patient demographics for better prescription adherence, drug inventory management, and sales analysis."}
+{"name": "Promotions.customer_email", "group": "dimensions", "cube_name": "Promotions", "variants": "None", "hint": "Customer's contact email for communication regarding prescriptions, patient adherence, drug inventory, and sales updates."}
