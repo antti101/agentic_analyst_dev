@@ -1,10 +1,9 @@
 # Core dependencies for Cube Analyst
-autogen==0.9.9
-autogen-agentchat>=0.4.0
+pyautogen>=0.3.2
 openai>=1.0.0
 python-dotenv>=1.0.0
 pyyaml>=6.0
-streamlit==1.49.1
+streamlit>=1.40.0
 
 # Additional dependencies that AutoGen might need
 pydantic>=2.0.0
