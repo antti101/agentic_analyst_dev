@@ -77,4 +77,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import duckdb
+    duckdb.query("SELECT 1 AS ok").df()
+    #main()

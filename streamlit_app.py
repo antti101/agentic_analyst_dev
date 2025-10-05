@@ -14,23 +14,36 @@ st.set_page_config(
 )
 
 st.title("💬 Ahava Finance Business Partner")
-st.caption("Your AI-powered FP&A co-pilot for financial insights, planning, and variance analysis.")
+st.caption("A proof-of-concept digital finance partner built on Ahava’s Finance Intelligence Layer (FIL).")
 
 # ---- Sidebar ----
 with st.sidebar:
     st.header("About 💡")
     st.markdown("""
-    This assistant helps finance teams analyze and interpret performance across  
-    **Accounts, Scenarios, Periods, Business Units, and Functions** — powered by  
-    OneStream-style data and Ahava’s semantic finance layer.
+    **Ahava’s Finance Intelligence Layer (FIL)** is an AI-driven semantic and analytics engine  
+    that interprets natural-language finance questions and delivers structured insights.
 
-    **Example questions:**
-    - “Compare OPEX by Function for Actual vs Budget in Q3.”
-    - “What’s the EBIT margin for Wilson in FY2024?”
-    - “Show SG&A variance for EMEA by Function.”
+    This proof-of-concept demonstrates how FIL can analyze and explain performance using  
+    **sample financial data**, simulating the connection to enterprise systems such as  
+    **Power BI, Databricks, OneStream, and SAP Datasphere**.
+
+    FIL understands financial context — accounts, periods, scenarios, and organizational  
+    dimensions — to provide narrative insights on **revenue, costs, and profitability trends**.
+
+    **Try asking:**
+    - “Show SG&A variance by Function for Actual vs Budget in Q3.”
+    - “Compare Operating Profit Actual vs Budget for Wilson by Quarter.”
+    - “How is Net Revenue trending year-to-date vs Budget?”
+
+    ---
+    **About this PoC**
+    - Demonstrates how semantic finance logic and AI reasoning come together  
+      to support business partnering and decision-making.
+    - Built with **Streamlit** for demonstration purposes; future versions will  
+      integrate directly with enterprise finance systems.
+    ---
     """)
-    st.markdown("---")
-    st.markdown("Built by **Ahava Consulting** — powered by Databricks, Streamlit, and OpenAI.")
+    st.markdown("Built by **Ahava Consulting** — enabling intelligent finance through AI and semantics.")
 
 # ---- Initialize Core App ----
 if "app" not in st.session_state:
@@ -66,12 +79,9 @@ if prompt := st.chat_input("Ask about your financials, planning, or performance.
                     response = future.result()
 
                 if response:
-                    if isinstance(response, dict):
-                        assistant_message = response.get("content", str(response))
-                    else:
-                        assistant_message = str(response)
+                    assistant_message = response.get("content", str(response)) if isinstance(response, dict) else str(response)
                 else:
-                    assistant_message = "Sorry, I couldn't get a response from the analyst."
+                    assistant_message = "Sorry, I couldn’t get a response from the analyst."
 
             except Exception as e:
                 assistant_message = f"⚠️ Error: {str(e)}"
