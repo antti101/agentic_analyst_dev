@@ -14,45 +14,6 @@ from autogen import ConversableAgent, UserProxyAgent
 # Monkey patch for capturing OpenAI client usage
 original_openai_create = None
 
-def patch_openai_for_usage_tracking():
-    """Patch OpenAI client to capture usage statistics"""
-    global original_openai_create
-
-    try:
-        import openai
-        from openai.resources.chat.completions import Completions
-
-        if original_openai_create is None:
-            # Store original create method from the class
-            original_openai_create = Completions.create
-
-            def tracked_create(self, *args, **kwargs):
-                result = original_openai_create(self, *args, **kwargs)
-
-                # Log usage if available
-                if hasattr(result, 'usage') and result.usage:
-                    logger.info("LLM call completed via OpenAI patch", extra={
-                        "event": "token_usage",
-                        "details": {
-                            "prompt_tokens": result.usage.prompt_tokens,
-                            "completion_tokens": result.usage.completion_tokens,
-                            "total_tokens": result.usage.total_tokens
-                        },
-                        "usage_source": "openai_patch"
-                    })
-
-                return result
-
-            # Patch the create method on the class
-            Completions.create = tracked_create
-            logger.info("OpenAI client patched for usage tracking", extra={"event": "patch_applied"})
-
-    except ImportError:
-        logger.warning("OpenAI not available for patching", extra={"event": "patch_failed"})
-    except Exception as e:
-        logger.warning(f"Failed to patch OpenAI: {e}", extra={"event": "patch_error", "error": str(e)})
-
-
 @dataclass
 class SemanticItem:
     """Represents a semantic layer item (measure or dimension)"""
@@ -200,9 +161,6 @@ class BIAnalystAgent:
     def __init__(self, semantic_server: DataPlatformSemanticServer, llm_config: dict):
         self.semantic_server = semantic_server
         self.llm_config = llm_config
-
-        # Apply OpenAI usage tracking patch
-        patch_openai_for_usage_tracking()
 
         self._setup_agent()
     

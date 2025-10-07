@@ -4,7 +4,7 @@ semantic_layer:
 
 autogen:
   bi_analyst:
-    model: "gpt-3.5-turbo"
+    model: "agentic-fbp-mini"  # Azure deployment name (update if different)
     temperature: 0.1
     max_tokens: 2000
     max_turns: 5
@@ -12,19 +12,14 @@ autogen:
 
 data_platform:
   cube_categories:
-    - orders
-    - products
-    - inventory
-    - customers
-    - marketing
-    - delivery
-  
+    - finance
+
   default_search_limit: 50
-  
+
   analysis_hints:
-    - "Consider both measures and dimensions for complete analysis"
-    - "Check cube relationships when analyzing across data marts"
-    - "Use dimension variants to understand possible filter values"
+    - "Consider both measures and dimensions for complete financial analysis"
+    - "Review cube relationships when combining multiple data sources"
+    - "Use dimension variants (e.g., Account L1–L4) for drill-down and roll-up views"
 
 logging:
   level: "INFO"

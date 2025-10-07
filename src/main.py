@@ -13,8 +13,8 @@ class EnhancedDataPlatformApp(DataPlatformApp):
     def __init__(self):
         semantic_layer_path = config.get_semantic_layer_path()
         super().__init__(semantic_layer_path)
-        
-        self.bi_analyst = None
+        from .semantic_layer_mcp import BIAnalystAgent
+        self.bi_analyst = BIAnalystAgent(self.semantic_server, config.get_llm_config())
     
     def chat_with_bi_analyst(self, message: str, chat_history: list):
         """Chat with the BI Analyst agent, maintaining conversation history."""
@@ -77,6 +77,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import duckdb
-    duckdb.query("SELECT 1 AS ok").df()
-    #main()
+    main()

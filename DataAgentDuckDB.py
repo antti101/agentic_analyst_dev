@@ -19,27 +19,29 @@ class DataAgentDuckDB:
 
         # Create cube-like view (adds ACT, BUD, Variance, VariancePct)
         self.con.execute("""
-            CREATE OR REPLACE VIEW finance_view AS
-            SELECT
-                Year,
-                Quarter,
-                Period,
-                Brand,
-                Region,
-                Function,
-                Account,
-                SUM(CASE WHEN Scenario='ACT' THEN Value END) AS ACT,
-                SUM(CASE WHEN Scenario='BUD' THEN Value END) AS BUD,
-                (SUM(CASE WHEN Scenario='ACT' THEN Value END)
-                 - SUM(CASE WHEN Scenario='BUD' THEN Value END)) AS Variance,
-                CASE WHEN SUM(CASE WHEN Scenario='BUD' THEN Value END) <> 0
-                     THEN ROUND(
-                         (SUM(CASE WHEN Scenario='ACT' THEN Value END)
-                          - SUM(CASE WHEN Scenario='BUD' THEN Value END))
-                         * 100.0 / SUM(CASE WHEN Scenario='BUD' THEN Value END), 2)
-                END AS VariancePct
-            FROM finance_raw
-            GROUP BY Year, Quarter, Period, Brand, Region, Function, Account;
+                    CREATE OR REPLACE VIEW finance_view AS
+                    SELECT
+                        Year,
+                        Quarter,
+                        Period,
+                        Brand,
+                        Region,
+                        Function,
+                        Account,
+                        SUM(CASE WHEN Scenario = 'ACT' THEN Value END) AS ACT,
+                        SUM(CASE WHEN Scenario = 'BUD' THEN Value END) AS BUD,
+                        (SUM(CASE WHEN Scenario = 'ACT' THEN Value END)
+                        - SUM(CASE WHEN Scenario = 'BUD' THEN Value END)) AS VAR,
+                        CASE 
+                            WHEN SUM(CASE WHEN Scenario = 'BUD' THEN Value END) <> 0 THEN
+                                ROUND(
+                                    (SUM(CASE WHEN Scenario = 'ACT' THEN Value END)
+                                    - SUM(CASE WHEN Scenario = 'BUD' THEN Value END))
+                                    * 100.0 / SUM(CASE WHEN Scenario = 'BUD' THEN Value END), 2)
+                        END AS VAR_PCT
+                    FROM finance_raw
+                    GROUP BY Year, Quarter, Period, Brand, Region, Function, Account;
+
         """)
         print("✅ finance_view created successfully")
 
