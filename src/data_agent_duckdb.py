@@ -243,7 +243,6 @@ class DataAgentDuckDB:
         - Use actual numeric values and focus on the key measure(s) requested.
         - Exclude zero-only rows from discussion.
         - Be concise (4–6 sentences), analytical, and fact-based.
-        - Highlight key findings, potential interesting facts, and segment by bulletpoints
 
         User Query JSON:
         {json.dumps(query_json, indent=2)}

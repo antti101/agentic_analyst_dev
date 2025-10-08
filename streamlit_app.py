@@ -100,9 +100,10 @@ with st.sidebar:
     st.markdown("---")
     st.subheader("Try asking:")
     st.markdown("""
-    1️⃣ *Show SG&A variance by Function for EMEA in Q3 2025*  
-    2️⃣ *How has SG&A trended for Marketing across regions over the last four quarters?*
-    3️⃣ *How efficient is EMEA in converting Net Revenue into Operating Profit compared to APAC?*
+    1️⃣ *Show SG&A variance by Function for EMEA in Q3 2025*                  
+    2️⃣ *How has SG&A trended for Marketing across regions over the last four quarters in 2025?*        
+    3️⃣ *How efficient is EMEA in converting Net Revenue into Operating Profit compared to APAC in 2025?*
+                
     """)
     st.markdown("---")
     st.caption("Built with Streamlit, powered by OpenAI, using Ahava’s Finance Intelligence Layer (FIL).")
