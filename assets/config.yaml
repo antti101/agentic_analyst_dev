@@ -16,10 +16,16 @@ data_platform:
 
   default_search_limit: 50
 
-  analysis_hints:
-    - "Consider both measures and dimensions for complete financial analysis"
-    - "Review cube relationships when combining multiple data sources"
-    - "Use dimension variants (e.g., Account L1–L4) for drill-down and roll-up views"
+analysis_hints:
+    - "If the user mentions 'variance' or 'var', map it to the relevant VAR_* measure."
+    - "If the user mentions 'SG&A' or 'sga', map it to SGandA_Expenses-related measures."
+    - "If the user mentions 'net revenue' or 'sales', map it to Net_Revenue-related measures."
+    - "If the user mentions 'operating profit' or 'EBIT', map it to Operating_Profit-related measures."
+    - "Always include dimensions like Region, Function, Brand, or Period when the user specifies them."
+    - "Convert periods like 'Q3 2025' or '2025 Q3' to the format '2025-Q3'."
+    - "Focus on both measures and dimensions to ensure complete financial analysis."
+    - "Use dimension variants (e.g., Account_L1–L4 or Parent_Function) for hierarchical drill-down or roll-up views."
+
 
 logging:
   level: "INFO"

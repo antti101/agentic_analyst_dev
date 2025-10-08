@@ -12,4 +12,7 @@ typing-extensions>=4.5.0
 nest_asyncio>=1.6.0
 
 # SQL query support (force binary wheels to avoid build issues on Windows)
-duckdb==1.1.3 --only-binary=:all:
+--only-binary=:all: duckdb==1.1.3
+
+# Table rendering for markdown summaries
+tabulate

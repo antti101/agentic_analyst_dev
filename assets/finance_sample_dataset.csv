@@ -1,11 +1,73 @@
 ﻿Year,Quarter,Period,Scenario,Brand,Region,Function,Account,Value
-2025,Q1,2025-Q1,ACT,BrandA,EMEA,Sales,Net Revenue,53000
-2025,Q1,2025-Q1,BUD,BrandA,EMEA,Sales,Net Revenue,50000
-2025,Q1,2025-Q1,ACT,BrandA,EMEA,Marketing,SG&A Expenses,12000
-2025,Q1,2025-Q1,BUD,BrandA,EMEA,Marketing,SG&A Expenses,10000
-2025,Q2,2025-Q2,ACT,BrandA,APAC,Sales,Net Revenue,56000
-2025,Q2,2025-Q2,BUD,BrandA,APAC,Sales,Net Revenue,52000
-2025,Q2,2025-Q2,ACT,BrandA,APAC,Marketing,SG&A Expenses,13000
-2025,Q2,2025-Q2,BUD,BrandA,APAC,Marketing,SG&A Expenses,11000
-2025,Q3,2025-Q3,ACT,BrandA,APAC,IT,Operating Profit,30500
-2025,Q3,2025-Q3,BUD,BrandA,APAC,IT,Operating Profit,28000
+2025,Q1,2025-Q1,ACT,LyraTech Systems,EMEA,Sales,Net Revenue,52000
+2025,Q1,2025-Q1,BUD,LyraTech Systems,EMEA,Sales,Net Revenue,50000
+2025,Q1,2025-Q1,ACT,LyraTech Systems,EMEA,Marketing,SG&A Expenses,11000
+2025,Q1,2025-Q1,BUD,LyraTech Systems,EMEA,Marketing,SG&A Expenses,10000
+2025,Q1,2025-Q1,ACT,LyraTech Systems,EMEA,IT,Operating Profit,7800
+2025,Q1,2025-Q1,BUD,LyraTech Systems,EMEA,IT,Operating Profit,7500
+2025,Q2,2025-Q2,ACT,LyraTech Systems,EMEA,Sales,Net Revenue,54000
+2025,Q2,2025-Q2,BUD,LyraTech Systems,EMEA,Sales,Net Revenue,53000
+2025,Q2,2025-Q2,ACT,LyraTech Systems,EMEA,Marketing,SG&A Expenses,112000
+2025,Q2,2025-Q2,BUD,LyraTech Systems,EMEA,Marketing,SG&A Expenses,10800
+2025,Q2,2025-Q2,ACT,LyraTech Systems,EMEA,IT,Operating Profit,8000
+2025,Q2,2025-Q2,BUD,LyraTech Systems,EMEA,IT,Operating Profit,7900
+2025,Q3,2025-Q3,ACT,LyraTech Systems,EMEA,Sales,Net Revenue,56000
+2025,Q3,2025-Q3,BUD,LyraTech Systems,EMEA,Sales,Net Revenue,55000
+2025,Q3,2025-Q3,ACT,LyraTech Systems,EMEA,Marketing,SG&A Expenses,11500
+2025,Q3,2025-Q3,BUD,LyraTech Systems,EMEA,Marketing,SG&A Expenses,11000
+2025,Q3,2025-Q3,ACT,LyraTech Systems,EMEA,IT,Operating Profit,8100
+2025,Q3,2025-Q3,BUD,LyraTech Systems,EMEA,IT,Operating Profit,8000
+2025,Q4,2025-Q4,ACT,LyraTech Systems,EMEA,Sales,Net Revenue,58000
+2025,Q4,2025-Q4,BUD,LyraTech Systems,EMEA,Sales,Net Revenue,56000
+2025,Q4,2025-Q4,ACT,LyraTech Systems,EMEA,Marketing,SG&A Expenses,11800
+2025,Q4,2025-Q4,BUD,LyraTech Systems,EMEA,Marketing,SG&A Expenses,11200
+2025,Q4,2025-Q4,ACT,LyraTech Systems,EMEA,IT,Operating Profit,8300
+2025,Q4,2025-Q4,BUD,LyraTech Systems,EMEA,IT,Operating Profit,8100
+2025,Q1,2025-Q1,ACT,LyraTech Mobility,APAC,Sales,Net Revenue,61000
+2025,Q1,2025-Q1,BUD,LyraTech Mobility,APAC,Sales,Net Revenue,58000
+2025,Q1,2025-Q1,ACT,LyraTech Mobility,APAC,Marketing,SG&A Expenses,13500
+2025,Q1,2025-Q1,BUD,LyraTech Mobility,APAC,Marketing,SG&A Expenses,12000
+2025,Q1,2025-Q1,ACT,LyraTech Mobility,APAC,IT,Operating Profit,8200
+2025,Q1,2025-Q1,BUD,LyraTech Mobility,APAC,IT,Operating Profit,8500
+2025,Q2,2025-Q2,ACT,LyraTech Mobility,APAC,Sales,Net Revenue,64000
+2025,Q2,2025-Q2,BUD,LyraTech Mobility,APAC,Sales,Net Revenue,60000
+2025,Q2,2025-Q2,ACT,LyraTech Mobility,APAC,Marketing,SG&A Expenses,14000
+2025,Q2,2025-Q2,BUD,LyraTech Mobility,APAC,Marketing,SG&A Expenses,13000
+2025,Q2,2025-Q2,ACT,LyraTech Mobility,APAC,IT,Operating Profit,8700
+2025,Q2,2025-Q2,BUD,LyraTech Mobility,APAC,IT,Operating Profit,8800
+2025,Q3,2025-Q3,ACT,LyraTech Mobility,APAC,Sales,Net Revenue,66500
+2025,Q3,2025-Q3,BUD,LyraTech Mobility,APAC,Sales,Net Revenue,64000
+2025,Q3,2025-Q3,ACT,LyraTech Mobility,APAC,Marketing,SG&A Expenses,14200
+2025,Q3,2025-Q3,BUD,LyraTech Mobility,APAC,Marketing,SG&A Expenses,13500
+2025,Q3,2025-Q3,ACT,LyraTech Mobility,APAC,IT,Operating Profit,9100
+2025,Q3,2025-Q3,BUD,LyraTech Mobility,APAC,IT,Operating Profit,9000
+2025,Q4,2025-Q4,ACT,LyraTech Mobility,APAC,Sales,Net Revenue,68000
+2025,Q4,2025-Q4,BUD,LyraTech Mobility,APAC,Sales,Net Revenue,66000
+2025,Q4,2025-Q4,ACT,LyraTech Mobility,APAC,Marketing,SG&A Expenses,14500
+2025,Q4,2025-Q4,BUD,LyraTech Mobility,APAC,Marketing,SG&A Expenses,13800
+2025,Q4,2025-Q4,ACT,LyraTech Mobility,APAC,IT,Operating Profit,9500
+2025,Q4,2025-Q4,BUD,LyraTech Mobility,APAC,IT,Operating Profit,9400
+2025,Q1,2025-Q1,ACT,LyraTech Solutions,EMEA,Sales,Net Revenue,48000
+2025,Q1,2025-Q1,BUD,LyraTech Solutions,EMEA,Sales,Net Revenue,46000
+2025,Q1,2025-Q1,ACT,LyraTech Solutions,EMEA,Marketing,SG&A Expenses,9500
+2025,Q1,2025-Q1,BUD,LyraTech Solutions,EMEA,Marketing,SG&A Expenses,9000
+2025,Q1,2025-Q1,ACT,LyraTech Solutions,EMEA,IT,Operating Profit,12000
+2025,Q1,2025-Q1,BUD,LyraTech Solutions,EMEA,IT,Operating Profit,11500
+2025,Q2,2025-Q2,ACT,LyraTech Solutions,EMEA,Sales,Net Revenue,49500
+2025,Q2,2025-Q2,BUD,LyraTech Solutions,EMEA,Sales,Net Revenue,47000
+2025,Q2,2025-Q2,ACT,LyraTech Solutions,EMEA,Marketing,SG&A Expenses,9800
+2025,Q2,2025-Q2,BUD,LyraTech Solutions,EMEA,Marketing,SG&A Expenses,9400
+2025,Q2,2025-Q2,ACT,LyraTech Solutions,EMEA,IT,Operating Profit,12200
+2025,Q2,2025-Q2,BUD,LyraTech Solutions,EMEA,IT,Operating Profit,11800
+2025,Q3,2025-Q3,ACT,LyraTech Solutions,EMEA,Sales,Net Revenue,51000
+2025,Q3,2025-Q3,BUD,LyraTech Solutions,EMEA,Sales,Net Revenue,49000
+2025,Q3,2025-Q3,ACT,LyraTech Solutions,EMEA,Marketing,SG&A Expenses,9900
+2025,Q3,2025-Q3,BUD,LyraTech Solutions,EMEA,Marketing,SG&A Expenses,9500
+2025,Q3,2025-Q3,ACT,LyraTech Solutions,EMEA,IT,Operating Profit,12500
+2025,Q3,2025-Q3,BUD,LyraTech Solutions,EMEA,IT,Operating Profit,12100
+2025,Q4,2025-Q4,ACT,LyraTech Solutions,EMEA,Sales,Net Revenue,52500
+2025,Q4,2025-Q4,BUD,LyraTech Solutions,EMEA,Sales,Net Revenue,50000
+2025,Q4,2025-Q4,ACT,LyraTech Solutions,EMEA,Marketing,SG&A Expenses,10000
+2025,Q4,2025-Q4,BUD,LyraTech Solutions,EMEA,Marketing,SG&A Expenses,9700
+2025,Q4,2025-Q4,ACT,LyraTech Solutions,EMEA,IT,Operating Profit,12800
+2025,Q4,2025-Q4,BUD,LyraTech Solutions,EMEA,IT,Operating Profit,12400

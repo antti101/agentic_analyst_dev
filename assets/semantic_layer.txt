@@ -1,19 +1,18 @@
 {"name": "Finance.fact Consolidated Financial Data", "group": "facts", "cube_name": "Finance", "variants": [], "hint": "Primary dataset combining Actuals and Budgets across regions, brands, and functions for P&L and OPEX analysis."}
-{"name": "ACT Net Revenue", "group": "measures", "cube_name": "Finance", "role": "revenue", "variants": [], "hint": "Actual Net Revenue used for trend and variance analysis."}
-{"name": "BUD Net Revenue", "group": "measures", "cube_name": "Finance", "role": "revenue", "variants": [], "hint": "Budgeted Net Revenue used for target comparison."}
-{"name": "VAR Net Revenue", "group": "measures", "cube_name": "Finance", "role": "variance", "variants": [], "hint": "Difference between Actual and Budget Net Revenue."}
-{"name": "VAR_PCT Net Revenue", "group": "measures", "cube_name": "Finance", "role": "variance_pct", "variants": [], "hint": "Percentage difference between Actual and Budget Net Revenue."}
-{"name": "ACT SG&A Expenses", "group": "measures", "cube_name": "Finance", "role": "expense", "variants": [], "hint": "Actual Selling, General & Administrative expenses."}
-{"name": "BUD SG&A Expenses", "group": "measures", "cube_name": "Finance", "role": "expense", "variants": [], "hint": "Budgeted SG&A expenses for performance tracking."}
-{"name": "VAR SG&A Expenses", "group": "measures", "cube_name": "Finance", "role": "variance", "variants": [], "hint": "Variance between Actual and Budget SG&A expenses."}
-{"name": "VAR_PCT SG&A Expenses", "group": "measures", "cube_name": "Finance", "role": "variance_pct", "variants": [], "hint": "Percentage variance between Actual and Budget SG&A expenses."}
-{"name": "ACT Operating Profit", "group": "measures", "cube_name": "Finance", "role": "profit", "variants": [], "hint": "Actual operating profit (EBIT)."}
-{"name": "BUD Operating Profit", "group": "measures", "cube_name": "Finance", "role": "profit", "variants": [], "hint": "Budgeted operating profit for comparison."}
-{"name": "VAR Operating Profit", "group": "measures", "cube_name": "Finance", "role": "variance", "variants": [], "hint": "Variance in operating profit vs budget."}
-{"name": "VAR_PCT Operating Profit", "group": "measures", "cube_name": "Finance", "role": "variance_pct", "variants": [], "hint": "Percentage variance in operating profit vs budget."}
-{"name": "Finance.Account", "group": "dimensions", "cube_name": "Finance", "variants": ["Account L1", "Account L2"], "hint": "Financial account type (e.g., Net Revenue, SG&A, Operating Profit)."}
-{"name": "Finance.Function", "group": "dimensions", "cube_name": "Finance", "variants": ["Function", "Parent Function"], "hint": "Department or cost owner such as Sales, Marketing, IT."}
-{"name": "Finance.Region", "group": "dimensions", "cube_name": "Finance", "variants": ["Region", "Subregion"], "hint": "Geographical reporting level (e.g., EMEA, APAC, NA)."}
-{"name": "Finance.Brand", "group": "dimensions", "cube_name": "Finance", "variants": ["Brand"], "hint": "Brand or business unit for analysis."}
-{"name": "Finance.Scenario", "group": "dimensions", "cube_name": "Finance", "variants": ["ACT", "BUD"], "hint": "Scenario type for Actual vs Budget analysis."}
-{"name": "Finance.Period", "group": "dimensions", "cube_name": "Finance", "variants": ["Year", "Quarter", "Period"], "hint": "Time dimension for period-over-period comparisons."}
+{"name": "Finance.VAR_Net_Revenue", "group": "measures", "cube_name": "Finance", "role": "variance", "variants": [], "hint": "Difference between Actual and Budget Net Revenue."}
+{"name": "Finance.VAR_PCT_Net_Revenue", "group": "measures", "cube_name": "Finance", "role": "variance_pct", "variants": [], "hint": "Percentage difference between Actual and Budget Net Revenue."}
+{"name": "Finance.ACT_SGandA_Expenses", "group": "measures", "cube_name": "Finance", "role": "expense", "variants": [], "hint": "Actual Selling, General & Administrative expenses."}
+{"name": "Finance.BUD_SGandA_Expenses", "group": "measures", "cube_name": "Finance", "role": "expense", "variants": [], "hint": "Budgeted SG&A expenses for performance tracking."}
+{"name": "Finance.VAR_SGandA_Expenses", "group": "measures", "cube_name": "Finance", "role": "variance", "variants": [], "hint": "Variance between Actual and Budget SG&A expenses."}
+{"name": "Finance.VAR_PCT_SGandA_Expenses", "group": "measures", "cube_name": "Finance", "role": "variance_pct", "variants": [], "hint": "Percentage variance between Actual and Budget SG&A expenses."}
+{"name": "Finance.ACT_Operating_Profit", "group": "measures", "cube_name": "Finance", "role": "profit", "variants": [], "hint": "Actual operating profit (EBIT)."}
+{"name": "Finance.BUD_Operating_Profit", "group": "measures", "cube_name": "Finance", "role": "profit", "variants": [], "hint": "Budgeted operating profit for comparison."}
+{"name": "Finance.VAR_Operating_Profit", "group": "measures", "cube_name": "Finance", "role": "variance", "variants": [], "hint": "Variance in operating profit vs budget."}
+{"name": "Finance.VAR_PCT_Operating_Profit", "group": "measures", "cube_name": "Finance", "role": "variance_pct", "variants": [], "hint": "Percentage variance in operating profit vs budget."}
+{"name": "Finance.Account", "group": "dimensions", "cube_name": "Finance", "variants": ["Finance.Account_L1", "Finance.Account_L2"], "hint": "Financial account type (e.g., Net Revenue, SG&A, Operating Profit)."}
+{"name": "Finance.Function", "group": "dimensions", "cube_name": "Finance", "variants": ["Finance.Function", "Finance.Parent_Function"], "hint": "Department or cost owner such as Sales, Marketing, IT."}
+{"name": "Finance.Region", "group": "dimensions", "cube_name": "Finance", "variants": ["Finance.Region", "Finance.Subregion"], "hint": "Geographical reporting level (e.g., EMEA, APAC, NA)."}
+{"name": "Finance.Brand", "group": "dimensions", "cube_name": "Finance", "variants": ["Finance.Brand"], "hint": "Brand or business unit for analysis."}
+{"name": "Finance.Scenario", "group": "dimensions", "cube_name": "Finance", "variants": ["Finance.ACT", "Finance.BUD"], "hint": "Scenario type for Actual vs Budget analysis."}
+{"name": "Finance.Period", "group": "dimensions", "cube_name": "Finance", "variants": ["Finance.Year", "Finance.Quarter", "Finance.Period"], "hint": "Time dimension for period-over-period comparisons."}
+
