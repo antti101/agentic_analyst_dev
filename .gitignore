@@ -1,5 +1,46 @@
-.history
-__pycache__
-.venv
+# --- Python virtual environments ---
+.venv/
+env/
+venv/
+ENV/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# --- Environment variables / secrets ---
 .env
+.env.*
+
+# --- Logs / runtime files ---
 agent_logs.jsonl
+*.log
+*.tmp
+*.pid
+.DS_Store
+.history
+
+# --- IDE / OS junk ---
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+
+# --- Streamlit / cache ---
+.streamlit/
+.streamlit_cache/
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+
+# --- Python build artifacts ---
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Data / checkpoints (optional) ---
+data/
+datasets/
+outputs/
+checkpoints/
